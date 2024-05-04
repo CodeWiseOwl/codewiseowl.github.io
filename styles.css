@@ -1,0 +1,32 @@
+body {
+  margin: 0; /* Remove default body margins */
+  overflow: hidden; /* Hide scrollbars if video overflows */
+}
+video {
+  position: absolute; /* Position video absolutely for layering */
+  top: 0; left: 0; /* Start at top left corner */
+  width: 100%; /* Stretch to 100% width and height */
+  height: 100%; 
+  object-fit: cover; /* Cover the entire area (may crop video) */
+}
+.text-overlay {
+  position: absolute; /* Position text absolutely over video */
+  top: 50%; left: 50%; /* Center the text */
+  transform: translate(-50%, -50%); /* Offset the text from center */
+  color: white; /* Example text color (adjust in stylesheet) */
+  font-size: 2em; /* Example text size (adjust in stylesheet) */
+  text-align: center; /* Center text horizontally */
+}
+
+.text-overlay {
+  color: rgb(15, 23, 25); /* Example color, change as desired */
+}
+
+/* Alternatively, target specific elements within .text-overlay */
+.text-overlay h1 {
+  color: blue; /* Example color for headings */
+}
+
+.text-overlay a {
+  color: red; /* Example color for links */
+}
